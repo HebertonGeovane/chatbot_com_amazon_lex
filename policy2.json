@@ -1,0 +1,13 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lex:RecognizeText",
+                "lex:RecognizeUtterance"
+            ],
+            "Resource": "arn:aws:lex:<Seu-AWS-Region :<Seu-Account-ID>:bot-alias/<Seu-DentistBot-ID/Alias-ID"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:<Seu-AWS-Region>:<Seu-Account-ID>:log-group:/aws/lambda/MakeAppointmentCodeHook:*", 
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "lambda:InvokeFunction",
+                "lambda:GetFunction"
+            ],
+            "Resource": "arn:aws:lambda:<Seu-AWS-Region>:<Seu-Account-ID>:function:MakeAppointmentCodeHook",
+            "Effect": "Allow"
+        }
+    ]
+}
